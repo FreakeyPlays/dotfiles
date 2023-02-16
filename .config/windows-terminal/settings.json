@@ -1,0 +1,126 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "PowerShell",
+    "profiles": {
+        "defaults": {
+            "colorScheme": "Custom GitHub",
+            "experimental.retroTerminalEffect": false,
+            "font": {
+                "face": "CaskaydiaCove Nerd Font Mono"
+            },
+            "opacity": 35,
+            "useAcrylic": true,
+            "elevate": false
+        },
+        "list": [
+            {
+                "commandline": "pwsh.exe -nologo",
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Eingabeaufforderung"
+            },
+            {
+                "guid": "{59b72ad2-09f7-55ec-af87-65d062af8472}",
+                "hidden": false,
+                "name": "Ubuntu 20.04.5 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu20.04LTS_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": true,
+                "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": true,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{e528860d-1e2f-5e0e-99bf-5af4d04460a5}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{095cc498-3644-5c35-bbf8-f82ab75fea6e}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": true,
+                "name": "Git Bash",
+                "source": "Git"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "name": "Custom GitHub",
+            "cursorColor": "#FFFFFF",
+            "selectionBackground": "#FFFFFF",
+            "background": "#1b1f23",
+            "foreground": "#c9d1d9",
+            "black": "#010409",
+            "blue": "#4078c0",
+            "cyan": "#1e9a9c",
+            "green": "#6cc644",
+            "purple": "#6e5494",
+            "red": "#bd2c00",
+            "white": "#c9d1d9",
+            "yellow": "#c9510c",
+            "brightBlack": "#555753",
+            "brightBlue": "#8caed9",
+            "brightCyan": "#7fe5e6",
+            "brightGreen": "#a3db8a",
+            "brightPurple": "#af9dc8",
+            "brightRed": "#ff8a66",
+            "brightWhite": "#c9d1d9",
+            "brightYellow": "#f6a06f"
+        }
+    ],
+    "useAcrylicInTabRow": true
+}

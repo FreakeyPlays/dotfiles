@@ -1,0 +1,17 @@
+[user]
+	name=DEFAULT_FIRST_NAME DEFAULT_LAST_NAME
+  email=DEFAULT_EMAIL
+
+[includeIf "gitdir:~/Git/University/"]
+  path = ~/Git/University/.gitconfig
+
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	ci = commit
+	pl = pull
+	ps = push
+	a = add
+	aa = add -A
+	d = diff
